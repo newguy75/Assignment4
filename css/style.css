@@ -1,77 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+[class*="col"] {
+  float: left;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 body {
   background-image: url(../images/index.jpg);
-  background: #A533FF ;
-  color:#caa151;
+  background: green;
   font-family: "Josefin Sans", sans-serif;
-/*font-weight: bold; */
 }
+h1 {
+  text-align: center;
+  font-size: 5em;
+  color: indianred
+}
+h2 {
+  text-align: center;
+  font-size: 3em;
+  color: orangered
+}
+h3 {
+  text-align: center;
+  font-size: 2em;
+  color: darkred
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5%;
+  grid-auto-rows: auto;
+}
+.one {
+  grid-column: 2;
+  grid-row: 1;
+}
+.two {
+  grid-column: 1;
+  grid-row: 1;
+}
+.three {
+  grid-column: 1;
+  grid-row:1;
+}
+#recipe-author {
+  font-style: italic;
+  color: red
 
-h1, h2, h3 {
-  font-family: "Berkshire Swash", sans-serif;
-  color:#FFFFFF   ;
-  text-shadow: 3px 3px 3px #FA33FF ;
-  font-style:oblique;
-/*font-size:30px; */
 }
-html, body {
-    height: 100%;
+#kringle-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
-body {
-    margin: 0;
-}
-.container {
-    font-size: 0; 
-    height: 100%;
-}
-.item {
-    font-size: 16px; 
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    height: 50%;
-    position: relative;
-    overflow: auto; 
-}
-.content {
-    position: absolute;
-    left: 0; right: 0; top: 0; bottom: 0; 
-}
-.item:nth-child(1) { background: #0E0D0E ; }
-.item:nth-child(2) { background: #F49E10 ; }
-.item:nth-child(3) { background: #1089F4  ; }
-.item:nth-child(4) { background: #40F410 ; }
 p {
-  color:#FFFFFF ;
+  color: black;
+  font-size: 1.5em;
 }
 
-li, a {
- color:#1089F4  ;
+ul {
+  font-size: 1.5em;
 }
-
-legend, fieldset {
-  color:rgb(8, 8, 8);
-  background-color: #D810F4  ;
-  border: double #121212;
+input, label, legend {
+  font-size: 1.5em;
+  color: black
 }
-
-.rate {
-  color:rgb(134, 182, 224);
-}
-
-ul
-li
-ol
-hr
-span
-figure
-input
-fieldset
-
-div {
-  border: double cornflowerblue;
-}
-
-
 .wow {
   width: 100px;
 }
